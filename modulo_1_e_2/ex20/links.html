@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        a:visited{
+            color: pink;
+
+        }
+        a:active{
+            color: red;
+        }
+
+        a::after{
+            content:" através do link";
+        }
+        a::before{
+            content: "acesse o ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Alguns links a baixo:</h1>
+    <ul>
+        <li><a href="https://www.google.com.br/" target="_blank">GOOGLE</a></li>
+        <li><a href="https://www.youtube.com/">YOUTUBE</a></li>
+        <li><a href="https://www.facebook.com/">FACEBOOK</a></li>
+    </ul>
+</body>
+</html>

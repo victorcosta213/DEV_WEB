@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+
+body{
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    
+                            }
+h1{
+    font-size: 50px;
+    color: blue;
+}
+h2{
+    font-size: 30px;
+    color: red;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    text-align: left;
+    text-shadow: 2px 2px 2px red;
+}
