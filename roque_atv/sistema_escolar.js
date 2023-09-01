@@ -23,7 +23,7 @@ while(i>0){
                     var nota1= parseFloat (prompt("Digite a nota1 do aluno(a): "));
                     var nota2= parseFloat (prompt("Digite a nota2 do aluno(a): "));
                     var nota3= parseFloat(prompt("Digite a nota3 do aluno(a): "));
-                    nota.push([nota1,nota2,nota3])
+                    nota[pos].push([nota1,nota2,nota3])
                     let valor= m(nota1,nota2,nota3);
                     media.push(valor);
                     break;
@@ -33,9 +33,9 @@ while(i>0){
                     console.log(`O aluno ${indentificador}`);
                     console.log(`Ficou com as notas ${nota[posi]}`);
                     console.log(`Ficou com a media ${media[posi].toFixed(2)}`);
-                            if(media[posi]>7){
+                            if(media[posi]>=7){
                                 console.log("Aprovado")
-                            }else if(media[posi]<7 && media>=5){
+                            }else if(media[posi]<7 && media[posi]>=5){
                                 console.log("recuperação")
                             }else if(media[posi]<5){
                                 console.log("Reprovado")
