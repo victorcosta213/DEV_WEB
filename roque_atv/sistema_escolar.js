@@ -23,9 +23,9 @@ while(i>0){
                     var nota1= parseFloat (prompt("Digite a nota1 do aluno(a): "));
                     var nota2= parseFloat (prompt("Digite a nota2 do aluno(a): "));
                     var nota3= parseFloat(prompt("Digite a nota3 do aluno(a): "));
-                    nota[pos].push([nota1,nota2,nota3])
+                    nota.splice(pos,0,[nota1,nota2,nota3])
                     let valor= m(nota1,nota2,nota3);
-                    media.push(valor);
+                    media.splice(pos,0,valor);
                     break;
                 case 3:
                     let indentificador= prompt("Digite o nome do aluno: ");
