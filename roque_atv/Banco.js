@@ -1,5 +1,7 @@
 class Banco{
     constructor(saldo){
+        const time= new Date().toLocaleString("pt-br",{timeZone: 'America/Sao_Paulo'})
+        this.time= time
         this.saldo = saldo
         this.historico=[]
     }
@@ -11,9 +13,14 @@ class Banco{
    
    
     Deposito(valor){
+        if(valor>0){
         this.saldo += valor
-        this.historico("Deposito",valor)
+        this.historico.push(["Deposito",valor,this.time])
         return console.log(`Seu deposito foi realizado com sucesso.`)
+        }else{
+           console.log("Impossivel realizar Depositos negativos") 
+        }
+
     }
 
     Saque(valor){
@@ -24,12 +31,14 @@ class Banco{
             }else{
                 res= "Saldo indisponivel para saque"
             }
-        this.historico.push(["Saque",valor,new Date()])
+        this.historico.push(["Saque",valor,this.time])
         return res
     }
  
     volta(){
-        console.log(`Retorna: ${this.his}`)
+        for(var items of this.historico){
+            console.log(`Operação: ${items[0]}, Valor: ${items[1]}, Horário: ${items[2]}`)
+        }
     }
 }
 
