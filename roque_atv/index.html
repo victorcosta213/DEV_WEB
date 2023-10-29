@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Gerenciador de Contas Bancárias</title>
+</head>
+<body>
+  <h1>Gerenciador de Contas Bancárias</h1>
+
+  <div>
+    <h2>Inserir Conta:</h2>
+    <label for="agencia">Agência:</label>
+    <input type="text" id="agencia">
+    <br>
+    <label for="numero">Número:</label>
+    <input type="text" id="numero">
+    <br>
+    <label for="tipo">Tipo de Conta:</label>
+    <select id="tipo">
+      <option value="Conta Corrente">Conta Corrente</option>
+      <option value="Conta Poupança">Conta Poupança</option>
+      <option value="Conta Universitária">Conta Universitária</option>
+    </select>
+    <br>
+    <label for="saldo">Saldo:</label>
+    <input type="text" id="saldo">
+    <br>
+    <button onclick="inserirConta()">Inserir</button>
+  </div>
+
+  <div>
+    <h2>Visualizar Contas:</h2>
+    <button onclick="visualizarContas()">Visualizar</button>
+    <ul id="listaContas"></ul>
+  </div>
+
+  <canvas id="contasPorTipoChart" width="200" height="200"></canvas>
+  <canvas id="valorTotalChart" width="200" height="200"></canvas>
+  <canvas id="quantidadeDepositoChart" width="200" height="200"></canvas>
+</body>
+</html>
+
