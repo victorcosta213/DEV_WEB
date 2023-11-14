@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div#header{
+    width: 100%;
+    background-color: aqua;
+    align-items: center;
+    text-align: center;
+}
+
+div#conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    background-color: green;
+   
+}
+
+div#conteiner1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    background-color: red;
+}
+
+div#mapa{
+    width: 50%;
+    background-color: purple;
+}
+
+div#filtro{
+    width: 25%;
+    background-color: red;
+}
+
+div.grafico{
+    width: 50%;
+    border: 1px solid black ;
+    align-items: center;
+}
+
+div.img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
